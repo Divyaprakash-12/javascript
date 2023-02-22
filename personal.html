@@ -8,7 +8,15 @@
     <title>JavaScript</title>
     <script>
         document.write("<h1 ><b><center>Personal information</center></b></h1>")
-    </script>
+        var address="RS puram,Coimbatore";
+        var quali="pursuing Bsc-It";
+        clg="Sri Ramakrishna College of Arts and Science";
+        </script>
+    <style>
+        h3{
+            color:coral;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,20 +26,31 @@
     <p id="id2"></p>
     <p id="id3"></p>
     <p id="id4"></p>
+    <p id="id5"></p>
+    <p id="id6"></p>
+    <p id="id7"></p>
+    <p id="id8"></p>
     <script>
         let DOB="12-04-2003";
         let gender='male'
         var AGE=20;
+        blood= "A1+ve"
         const person = {
             fname:"Hari",
             lname:"prakash B.M"
             
 
         };
-        document.getElementById("id1").innerHTML = "<b>  Name :</b> " + person.fname + person.lname;
-        document.getElementById("id2").innerHTML = "<b>  DOB :</b> " + DOB;
-        document.getElementById("id3").innerHTML = "<b>  Age :</b> " + AGE;
-        document.getElementById("id4").innerHTML = "<b>  Gender :</b> " + gender;
+        document.getElementById("id1").innerHTML = "<h2> Name : " +"</h2>" + "<h3>" + person.fname + person.lname +"</h3>" ;
+        document.getElementById("id2").innerHTML = "<h2>  DOB : " +"</h2>"+ "<h3>" +DOB +"</h3>";
+        document.getElementById("id3").innerHTML = "<h2>  Age : " +"</h2>"+"<h3>" + AGE+"</h3>";
+        document.getElementById("id4").innerHTML = "<h2>  Gender : " +"</h2>"+"<h3>" + gender+"</h3>";
+        document.getElementById("id5").innerHTML = "<h2>  Blood group : " +"</h2>"+"<h3>" + blood+"</h3>";
+        document.getElementById("id6").innerHTML = "<h2>  Address : " +"</h2>"+ "<h3>" +address+"</h3>";
+        document.getElementById("id7").innerHTML = "<h2>  Qualification : " +"</h2>"+"<h3>" + quali+"</h3>";
+        document.getElementById("id8").innerHTML = "<h2>  College : " +"</h2>"+ "<h3>" +clg+"</h3>";
+
+
     </script>
 </body>
 
