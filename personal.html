@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        document.write("<h1 ><b><center>Personal information</center></b></h1>")
+    </script>
+</head>
+
+<body>
+    
+    <h2><b>Assign all your personal details</b> </h2><br>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    <p id="id4"></p>
+    <script>
+        let DOB="12-04-2003";
+        let gender='male'
+        var AGE=20;
+        const person = {
+            fname:"Hari",
+            lname:"prakash B.M"
+            
+
+        };
+        document.getElementById("id1").innerHTML = "<b>  Name :</b> " + person.fname + person.lname;
+        document.getElementById("id2").innerHTML = "<b>  DOB :</b> " + DOB;
+        document.getElementById("id3").innerHTML = "<b>  Age :</b> " + AGE;
+        document.getElementById("id4").innerHTML = "<b>  Gender :</b> " + gender;
+    </script>
+</body>
+
+</html>
