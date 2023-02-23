@@ -1,9 +1,22 @@
 function gender(){
-    var gender=document.getElementById("g");
+    var gender=document.getElementById("g").value;
     if(gender=='m' || gender=='M'){
     document.write("The person is a male");}
     else if(gender=='f' || gender=='F'){
     document.write("the person is a female");}
     else{
-    document.write("the person is a transgender");}
+    document.write("invalid input");}
+}
+function swi(){
+    var cls=document.getElementById("g").value;
+    switch(cls){
+        case "m"||"M":
+            document.write("the person is a male");
+            break;
+        case "f"||"F":
+            document.write("the person is a female");
+            break;
+        default:
+            document.write("invalid input");
+    }
 }
