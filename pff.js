@@ -20,7 +20,7 @@ function factorial(){
         f=f*i;
         i++;
     }while(i<=num);
-    document.write('factorial of given number is : ' + f);
+    document.write('factorial of given number '+num+' is : ' + f);
 }
 function fibonacci(){
     var num = document.getElementById("fibo").value;
