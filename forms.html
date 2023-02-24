@@ -15,12 +15,10 @@
             margin: 10px ;
         }
     </style>
-    <script src="form.js">
-    </script>
 </head>
 <body>
     <h1 style="text-align: left;">Registration form </h1>
-        <form action="" method="post" name="form1">
+        <form action="" method="post" name="form1" >
         <fieldset>
             <legend>
                 Trainee details
@@ -37,7 +35,7 @@
             <label>address</label><br>
             <textarea name="add"></textarea><br><br>
             <label>DOB</label>
-            <input type="date" name="DOB"><br><br>
+            <input type="date" name="dob"><br><br>
             <label>choose profession</label><br>
             <select name="profession" >
                 <optgroup label="developer">
@@ -56,10 +54,12 @@
             <label>telephone number</label><br>
             <input type="tel" pattern="[6-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="enter telephone number" name="teleno">
             <br><br>
-            <button type="button"  onclick="rejistered()">submit</button>
+            <button type="button" onclick="registered()">submit</button>
             <input type="reset" ><br>
         </fieldset>
     </form>
-    
+
+    <script src="form.js">
+    </script> 
 </body>
 </html>

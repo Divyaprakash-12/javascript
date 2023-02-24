@@ -1,19 +1,19 @@
-function rejistered(){
-   
-    alert( "you have rejistered successfully");
-    var name=document.form1.uname.values;
-    var email=document.form1.mail.values;
-    var gender=document.form1.gender.values;
-    var address=document.form1.add.values;
-    var DOB=document.form1.DOB.values;
-    var profession=document.form1.profession.values;
-    var phno=document.form1.phno.values;
-    var teleno=document.form1.teleno.values;
-    document.write( name +"<br>");
-    document.write("email : "+ email +"<br>");
-    document.write("DOB : "+ DOB +"<br>");
-    document.write("profession : "+ profession  +"<br>");
-    document.write("phone no : "+ phno +"<br>");
-    document.write("telephone no : "+ teleno +"<br>");
-    
+function registered(){
+    alert( "you have registered successfully");
+    var name=document.form1.uname.value;
+    var gender=document.form1.gender.value;
+    var address=document.form1.add.value;
+    var email=document.form1.mail.value;
+    var dob=document.form1.dob.value;
+    var profession=document.form1.profession.value;
+    var phno=document.form1.phno.value;
+    var teleno=document.form1.teleno.value;
+    document.write("<b>Name : </b>" + name + "<br><br>");
+    document.write("<b>Gender : </b>" + gender + "<br><br>");
+    document.write("<b>Address : </b>" + address+ "<br><br>");
+    document.write("<b>Email : </b>"+ email+"<br><br>");
+    document.write("<b>DOB : </b>"+ dob +"<br><br>");
+    document.write("<b>Profession : </b>"+ profession  +"<br><br>");
+    document.write("<b>Phone no : </b>"+ phno +"<br><br>");
+    document.write("<b>Telephone no : </b>"+ teleno +"<br><br>");   
 }
