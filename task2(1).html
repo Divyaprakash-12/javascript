@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <h3>Friends list</h3>
+    <button type="button" onclick="friends()">names</button><br><br>
+    <input type="text" name="names" placeholder="enter new friends names" id="front">
+    <button type="button" onclick="addFriendAtBeginning()">add begining</button>
+    <button type="button" onclick="addFriendAtEnd()">add end</button><br><br>
+    <button type="button" onclick="delFriendAtFront()">del begining</button><br><br>
+    <button type="button" onclick="delFriendAtEnd()">del ending</button><br><br>
+    <button type="button" onclick="sort()">sorting</button><br><br>
+    <button type="button" onclick="forloop()">for loop</button><br><br>
+    
+<script>
+    function friends(){
+        let friends = ["madhu","divya","prakash","arun","suresh"];
+        document.write(friends)
+    }
+   
+    function addFriendAtBeginning() {
+        let friends = ["madhu","divya","prakash","arun","suresh"];
+        let addbeg=document.getElementById("front").value;
+        //friends.splice(0,0,addbeg);
+        friends.unshift(addbeg)
+        document.write(friends);
+		}
+    function addFriendAtEnd(){
+        let friends = ["madhu","divya","prakash","arun","suresh"];
+        let addend=document.getElementById("front").value;
+        friends.push(addend)
+        document.write(friends);
+    }
+    function delFriendAtFront(){
+        let friends = ["madhu","divya","prakash","arun","suresh"];
+        friends.shift()
+        document.write(friends);
+    }
+    function delFriendAtEnd(){
+        let friends = ["madhu","divya","prakash","arun","suresh"];
+        friends.pop()
+        document.write(friends);
+    }
+    function sort(){
+        let friends = ["madhu","divya","prakash","arun","suresh"];
+        friends.sort()
+        document.write(friends);
+    }
+    function forloop(){
+        let friends = ["madhu","divya","prakash","arun","suresh"];
+        let len=friends.len;
+        for(i=0;i<len;i++){
+            
+        }
+        document.write(friends[i])
+
+    }
+
+    
+    
+</script>
+</body>
+</html>

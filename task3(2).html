@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="class"></p>
+    <script>
+        class Person {
+            constructor(name, age, gender, address) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.address = address;
+            }
+
+        }
+        class Member extends Person {
+            constructor(name, age, gender, address, emp_code, department, designation, salary) {
+                super(name, age, gender, address);
+                this.emp_code = emp_code;
+                this.department = department;
+                this.designation = designation;
+                this.salary = salary;
+            }
+
+
+            display() {
+                document.getElementById("class").innerHTML = ("The person name is:"+ member.name +"<br>The person age is:" + member.age + "<br>The person gender is:" + member.gender + "<br>The person adress is:" +
+                    member.address + "<br>The person employee code is:" + member.emp_code + "<br>The person department is:" + member.department + "<br>The person designation is:" + member.designation + "<br>The person salary is:" + member.salary);
+
+            }
+        }
+       var  member = new Member('karthi', 22, 'Male', 'Tirupur', "108", 'Software', 'Developer', 20000);
+        member.display();
+    </script>
+
+</body>
+</html>

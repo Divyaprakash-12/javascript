@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+    <script>
+      class Person 
+{
+  constructor(name, age, gender,adress)
+   {
+    this.name = name;
+    this.age =  age;
+    this.gender = gender;
+    this.address = address;
+  }
+ getDisplay()
+  {
+      document.write("<br> The name of the person is: "+this.name);
+      document.write("<br> The age of the person is: "+this.age);
+      document.write("<br> The gender of the person is: "+this.gender);
+      document.write("<br> The adress of the person is: "+this.adress);
+      
+  }
+
+}
+
+let details = new Person('kathikeyan', 20,'male','3/149 ganapathypalayam mangalam tirupur');
+document.write(details.getDisplay());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
