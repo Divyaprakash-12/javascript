@@ -7,61 +7,93 @@
     <title>task2</title>
 </head>
 <body>
+    <h2><center>Array methods</center></h2>
     <h3>Friends list</h3>
-    <button type="button" onclick="friends()">names</button><br><br>
+
+    <button type="button" onclick="friend()">names</button><br><br>
+    <hr>
+    <h3>Adding front and end</h3>
     <input type="text" name="names" placeholder="enter new friends names" id="front">
     <button type="button" onclick="addFriendAtBeginning()">add begining</button>
-    <button type="button" onclick="addFriendAtEnd()">add end</button><br><br>
+    <button type="button" onclick="addFriendAtEnd()">add end</button><br><br><hr>
+    <h3>Deleting front and end</h3>
     <button type="button" onclick="delFriendAtFront()">del begining</button><br><br>
-    <button type="button" onclick="delFriendAtEnd()">del ending</button><br><br>
-    <button type="button" onclick="sort()">sorting</button><br><br>
+    <button type="button" onclick="delFriendAtEnd()">del ending</button><br><br><hr>
+    <h3>Sorting the array</h3>
+    <button type="button" onclick="sort()">sorting</button><br><br><hr>
+    <h3>For</h3>
     <button type="button" onclick="forloop()">for loop</button><br><br>
-    
+    <button type="button" onclick="forof()">for of</button><br><br>
+    <button type="button" onclick="forin()">for in</button><br><br>
+    <button type="button" onclick="fe()">for each</button><br><br><hr>
+    <h3>Separating array using comma</h3>
+    <button type="button" onclick="comma()">comma</button><br><br><hr>
+   <h3>Current date</h3>
+    <button type="button" onclick="date()">date</button><br><br>
+    <hr>
 <script>
-    function friends(){
-        let friends = ["madhu","divya","prakash","arun","suresh"];
+    var friends = ["Madhu","Divya","Prakash","Arun","Suresh"];
+    function friend(){
         document.write(friends)
     }
    
     function addFriendAtBeginning() {
-        let friends = ["madhu","divya","prakash","arun","suresh"];
         let addbeg=document.getElementById("front").value;
         //friends.splice(0,0,addbeg);
         friends.unshift(addbeg)
         document.write(friends);
 		}
     function addFriendAtEnd(){
-        let friends = ["madhu","divya","prakash","arun","suresh"];
         let addend=document.getElementById("front").value;
         friends.push(addend)
         document.write(friends);
     }
     function delFriendAtFront(){
-        let friends = ["madhu","divya","prakash","arun","suresh"];
+        
         friends.shift()
         document.write(friends);
     }
     function delFriendAtEnd(){
-        let friends = ["madhu","divya","prakash","arun","suresh"];
+        
         friends.pop()
         document.write(friends);
     }
     function sort(){
-        let friends = ["madhu","divya","prakash","arun","suresh"];
+        
         friends.sort()
         document.write(friends);
     }
     function forloop(){
-        let friends = ["madhu","divya","prakash","arun","suresh"];
-        let len=friends.len;
-        for(i=0;i<len;i++){
-            
-        }
-        document.write(friends[i])
-
+       var len=friends.length; 
+       for(var i=0;i<len;i++){
+        document.write(friends[i]+","+"<br>");
+       }
     }
-
-    
+    function forof(){
+        for(var friend of friends){
+            document.write(friend+"<br>")
+        }
+    }
+    function forin(){
+        for(var i in friends){
+            var j=i;
+            document.write("friends ["+j +"]"+ friends[i]+"<br>")
+        }
+    }
+    function fe(){
+        friends.forEach(foreach)
+        function foreach(array){
+            document.write(array+"<br>");
+        }
+    }
+    function comma(){
+        document.write(friends+",")
+    }
+    function date(){
+        var currentDate=new Date();
+        var cDate=currentDate.getDate();
+        document.write("Current Date:"+cDate);
+    }
     
 </script>
 </body>
