@@ -8,18 +8,18 @@
 </head>
 <body>
 
-    <form action="" name="login" method="post">
+    <form action="" name="login" method="get">
         <fieldset>
             <legend>
                 login
             </legend>
             <label>user name</label><br>
-            <input type="text" name="uname" placeholder="enter your name" ><br>
+            <input type="text" name="uname" placeholder="enter your name" required><br>
             <lable>password</lable><br>
-            <input type="password" name="pwd" placeholder="enter your password" ><br>
+            <input type="password" name="pwd" placeholder="enter your password" required><br>
             <lable>confirm password</lable><br>
-            <input type="password" name="cpwd" placeholder="confirm your password" ><br><br>
-            <input type="submit" name="submit" onsubmit="return validateform()">
+            <input type="password" name="cpwd" placeholder="confirm your password" required><br><br>
+            <button type="button" onclick="validateform()">submit</button>
 
 
         </fieldset>

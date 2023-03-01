@@ -7,22 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" name="login" method="post">
+    <form action="" name="login1" method="get" >
         <fieldset>
-            <legend>
-                login
+            <legend >
+                login1
             </legend>
-            <label>First name</label><br>
-            <input type="text" name="fname" placeholder="enter your name" ><br>
-            <lable>password</lable><br>
-            <input type="password" name="pwd" placeholder="enter your password" ><br>
-            <lable>confirm password</lable><br>
-            <input type="password" name="cpwd" placeholder="confirm your password" ><br><br>
-            <input type="submit" name="submit" onsubmit="return validateform()">
-
-
+            <label>First name</label><br><br>
+            <input type="text" name="fname" placeholder="enter your first name" ><br><br>
+            <label>Last name</label><br><br>
+            <input type="text" name="lname" placeholder="enter your last name"><br><br>
+            <label>Gender</label><br><br>
+            <input type="radio" id="Gender" name="gender" value="male">male<br><br>
+            <input type="radio" id="Gender" name="gender" value="female">female<br><br>
+            <label>date of birth</label><br><br>
+            <input type="date" name="dob" ><br><br>
+            <button type="button" onclick="validateform1()">register</button>         
         </fieldset>
-
     </form>
     <script src="task2(2).js"></script>
 </body>
