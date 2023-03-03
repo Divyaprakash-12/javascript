@@ -7,36 +7,42 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="class"></p>
     <script>
-        class Person {
-            constructor(name, age, gender, address) {
-                this.name = name;
-                this.age = age;
-                this.gender = gender;
-                this.address = address;
-            }
-
+         class person{
+            constructor(name,age,gender,address){
+      this.name=name;
+      this.age=age;
+      this.gender=gender;
+      this.address=address;
+    }
+}
+    class employee extends person{
+        super.
+        constructor(emp_code,emp_dept,emp_design,emp_salary){
+            this.emp_code=emp_code;
+            this.emp_dept=emp_dept;
+            this.emp_design=emp_design;
+            this.emp_salary=emp_salary;
         }
-        class Member extends Person {
-            constructor(name, age, gender, address, emp_code, department, designation, salary) {
-                super(name, age, gender, address);
-                this.emp_code = emp_code;
-                this.department = department;
-                this.designation = designation;
-                this.salary = salary;
-            }
-
-
-            display() {
-                document.getElementById("class").innerHTML = ("The person name is:"+ member.name +"<br>The person age is:" + member.age + "<br>The person gender is:" + member.gender + "<br>The person adress is:" +
-                    member.address + "<br>The person employee code is:" + member.emp_code + "<br>The person department is:" + member.department + "<br>The person designation is:" + member.designation + "<br>The person salary is:" + member.salary);
-
-            }
-        }
-       var  member = new Member('karthi', 22, 'Male', 'Tirupur', "108", 'Software', 'Developer', 20000);
-        member.display();
+    
+    getDisplay(){
+      document.write("<b>The name of the person is:</b>"+this.name+"<br>");
+      document.write("<b>The age of the person is:</b>"+this.age+"<br>");
+      document.write("<b>The gender of the person is:</b>"+this.gender+"<br>");
+      document.write("<b>The address of the person is:</b>"+this.address+"<br>");
+      document.write("<b>employee code:</b>"+this.emp_code+"<br>");
+      document.write("<b>employee department:</b>"+this.emp_dept+"<br>");
+      document.write("<b>employee designation:</b>"+this.emp_design+"<br>");
+      document.write("<b>employee code</b>"+this.emp_code+"<br>");
+      document.write("<b>employee salary</b>"+this.emp_salary+"<br>");  
+    
+    }
+      
+    }
+    var details=new empoyee("hari","20","male","RS puram",20107075,"marketting","manager","1,00,000");
+    details.getDisplay();
+         
     </script>
-
+  
 </body>
 </html>

@@ -5,30 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task3</title>
-    <script>
-      class Person 
-{
-  constructor(name, age, gender,adress)
-   {
-    this.name = name;
-    this.age =  age;
-    this.gender = gender;
-    this.address = address;
+ <script>
+  class person{
+    constructor(name,age,gender,address){
+      this.name=name;
+      this.age=age;
+      this.gender=gender;
+      this.address=address;
+    }
+    getDisplay(){
+      document.write("<b>The name of the person is:</b>"+this.name+"<br>");
+      document.write("<b>The age of the person is:</b>"+this.age+"<br>");
+      document.write("<b>The gender of the person is:</b>"+this.gender+"<br>");
+      document.write("<b>The address of the person is:</b>"+this.address+"<br>");
+    }
   }
- getDisplay()
-  {
-      document.write("<br> The name of the person is: "+this.name);
-      document.write("<br> The age of the person is: "+this.age);
-      document.write("<br> The gender of the person is: "+this.gender);
-      document.write("<br> The adress of the person is: "+this.adress);
-      
-  }
+  let data=new person("prakash",20,"male","Rs puram cbe-1.");
+  data.getDisplay();
 
-}
-
-let details = new Person('kathikeyan', 20,'male','3/149 ganapathypalayam mangalam tirupur');
-document.write(details.getDisplay());
-    </script>
+ </script>   
 </head>
 <body>
 
