@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+
+<body>
+    <p id="class"></p>
+    <script>
+        class Person {
+            constructor(name, age, gender, address) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.address = address;
+            }
+        }
+        class employee extends Person {
+
+            constructor(name, age, gender, address, emp_code, emp_dept, emp_design, emp_salary) {
+                super(name, age, gender, address);
+                this.emp_code = emp_code;
+                this.emp_dept = emp_dept;
+                this.emp_design = emp_design;
+                this.emp_salary = emp_salary;
+            }
+
+            getDisplay() {
+                document.getElementById("class").innerHTML = ("<b>The person name is:</b>" + details.name + "<br><b>The person age is:</b>" + details.age + "<br><b>The person gender is:</b>" + details.gender + "<br><b>The person adress is:</b>" +
+                    details.address + "<br><b>The person employee code is:</b>" + details.emp_code + "<br><b>The person department is:</b>" + details.emp_dept + "<br><b>The person designation is:</b>" + details.emp_design + "<br><b>The person salary is:</b>" + details.emp_salary);
+de
+            }
+
+        }
+        var details = new employee("hari", "20", "male", "RS puram", 20107075, "marketting", "manager", "1,00,000");
+        details.getDisplay();
+
+    </script>
+
+</body>
+
+</html>

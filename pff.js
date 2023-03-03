@@ -6,7 +6,7 @@ function perfect() {
         if (num % i == 0)
             sum = sum + i;
     if (sum == num) {
-        document.write('the given number' + num + ' is a perfect number');
+        alert('the given number' + num + ' is a perfect number');
     } else {
         document.write('the given number' + num + ' is not a perfect number');
     }
